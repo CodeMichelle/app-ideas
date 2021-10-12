@@ -1,3 +1,11 @@
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1vh auto;
+}
+
 .App {
   text-align: center;
 }
@@ -43,10 +51,9 @@
   align-items: center;
   flex-direction: column;
   width: 30rem;
-  margin: 0rem auto;
+  margin: 1rem auto;
+  padding: 2rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.233);
-  padding: 1rem;
-  justify-content: space-between;
 }
 
 .List-header {
@@ -59,11 +66,38 @@
 }
 
 .List-ingredients {
-  width: 30%;
+  width: 70%;
   border-radius: 100%;
 }
 
 .List-instructions {
-  width: 30%;
+  width: 70%;
   text-align: left;
 }
+
+.AddToList {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.AddToList-input {
+  padding: 0.5rem;
+  width: 25rem;
+  font-size: 1rem;
+  margin: 0.3rem auto;
+  align-items: center;
+}
+
+.AddToList-btn {
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #0b5468;
+  font-weight: 700;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+}
+

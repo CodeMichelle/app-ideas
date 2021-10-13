@@ -9,7 +9,7 @@ interface IProps {
 const AddToList: React.FC<IProps> = ({setRecipes, recipes}) => {
     const [input, setInput] = useState({
         name: "",
-        ingredients: [],
+        ingredients: "",
         instructions: ""
     })
 
@@ -34,7 +34,7 @@ const AddToList: React.FC<IProps> = ({setRecipes, recipes}) => {
 
         setInput({
             name: "",
-            ingredients: [],
+            ingredients: "",
             instructions: ""
         })
     }

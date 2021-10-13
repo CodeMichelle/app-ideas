@@ -7,17 +7,24 @@ interface IProps {
 }
 
 const List: React.FC<IProps> = ({ recipes }) => {
-    
-    const renderList = (): JSX.Element[] => {
-        var str = '<ul>'
-        recipes.forEach(function(recipe) {
+
+    function renderIngredientsList(recipe: any) {
+        recipe.ingredients.map(ingredient => {
+            return(<div>{ingredient}</div>);
+        })
+    }
+
+    const renderHello = (): JSX.Element[] => {
+        var str = ''
+        recipes.map(recipe => {
             recipe.ingredients.forEach(function(ingredient) {
                 str += '<li>' + ingredient + '</li>';
-            });
-        });
-
-        str += '</ul>';
-
+            }
+        )})
+        return (<div>'Whaddup beech'</div>);
+    }
+    
+    const renderList = (): JSX.Element[] => {
         return recipes.map(recipe => {
             return(
                 <li className="List">
@@ -25,7 +32,7 @@ const List: React.FC<IProps> = ({ recipes }) => {
                         <h2>{recipe.name}</h2>
                     </div>
                     <div className="List-ingredients">
-                        <p>{str}</p>
+                        renderIngredientsList({recipe})
                     </div>
                     <div className="List-instructions">
                         <p>{recipe.instructions}</p>
@@ -36,9 +43,9 @@ const List: React.FC<IProps> = ({ recipes }) => {
     }
 
     return (
-        <ul>
+        <div>
             {renderList()}
-        </ul>
+        </div>
     )
 }
 

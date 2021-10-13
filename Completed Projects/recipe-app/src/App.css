@@ -76,11 +76,12 @@ h2 {
 }
 
 .AddToList {
-  display: flex;
-  flex-direction: column;
-  width: 60rem;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    margin: 1rem auto;
+    padding: 2rem;
 }
 
 .AddToList-input {

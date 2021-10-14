@@ -1,3 +1,12 @@
+$font-stack: "roboto", "Helvetica Neue", Helvetica, Arial;
+
+* {
+    box-sizing: border-box;
+    transition:all .2s ease-in;
+}
+
+body
+
 h2 {
   display: flex;
   flex-direction: column;

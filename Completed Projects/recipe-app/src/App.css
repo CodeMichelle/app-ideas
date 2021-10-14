@@ -21,8 +21,8 @@ h2 {
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.header {
+  background-color: dodgerblue;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -100,5 +100,14 @@ h2 {
   color: white;
   border: none;
   margin-top: 1rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+  background-color: dodgerblue;
+  color: white;
 }
 

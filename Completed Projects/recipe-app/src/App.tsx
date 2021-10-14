@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import List from './components/List'
 import AddToList from './components/AddToList'
 import './App.css';
+import Footer from './components/Footer';
 
 export interface IState {
   recipes: 
@@ -30,11 +31,12 @@ function App() {
 
   return (
     <div className="content">
-      <div className="App-header">
+      <div className="header">
       Recipe Keeper
       </div>
       <List recipes={recipes}/>
       <AddToList setRecipes={setRecipes} recipes={recipes}/>
+      <Footer/>
     </div>
   );
 }
